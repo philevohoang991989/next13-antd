@@ -21,7 +21,7 @@ export function Auth({ children }: AuthProps) {
   }, [router, token]);
 
   return (
-    <div>
+    <>
       {!token ? (
         <Spin
           size="large"
@@ -30,6 +30,6 @@ export function Auth({ children }: AuthProps) {
       ) : (
         children
       )}
-    </div>
+    </>
   );
 }
